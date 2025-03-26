@@ -20,8 +20,13 @@ public class DisableAutomationMessage {
 		/* excludeSwitches is a capability provide by the chrome options to manage the Switches  */
 		
         options.setExperimentalOption("useAutomationExtension", false);
+        /*is used in Selenium WebDriver when configuring a ChromeOptions object.
+         *  It disables the Chrome Automation Extension, 
+         *  which is a built-in extension that Chrome adds when running in automated mode.*/
+        
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
+        
         driver.get("https://www.google.com/");
 
 	}
