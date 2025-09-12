@@ -36,6 +36,9 @@ public class AmzMobiles {
 
 	        // Find the 7th listed mobile
 	        WebElement seventhMobile = driver.findElement(By.xpath("(//div[@data-component-type='s-search-result'])[5]//h2//span"));
+	        
+	        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", seventhMobile);
+	        Thread.sleep(3000);
 	        String mobileName=seventhMobile.getText();
 	        System.out.println(mobileName);
 	        seventhMobile.click();
