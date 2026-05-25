@@ -33,8 +33,7 @@ public class Iframes {
 		 driver.switchTo().defaultContent();
 		 driver.findElement(By.id("name")).sendKeys(" ahamed");
 		 Thread.sleep(5000);
-		 driver.quit();
-
+ 
 	}
 
 }

@@ -68,6 +68,7 @@ public class Myntra {
 		Actions action = new Actions(driver);
 		action.moveToElement(navBar).build().perform();
 		
+		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(6));
 		WebElement menDropDown = driver.findElement(By.xpath("//div[@class='desktop-navLink']//div[@data-group='men']//a[contains(text(),'Topwear')]"));
 		wait.until(ExpectedConditions.visibilityOf(menDropDown));
